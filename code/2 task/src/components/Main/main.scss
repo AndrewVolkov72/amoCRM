@@ -1,0 +1,117 @@
+@import '../../styles/color.scss';
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  &-content {
+    width: 362px;
+  }
+  &-content > *:first-child {
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 58px;
+    color: $white;
+    font-weight: 400;
+
+    &--orange {
+      font-weight: 900;
+      background: $orange_gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  &__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+  }
+  &-side > *:first-child {
+    margin-bottom: 40px;
+  }
+  &-side {
+    width: 300px;
+
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: $white;
+      text-align: end;
+
+      &--red {
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        background: $red_gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-transform: uppercase;
+      }
+    }
+
+    &-content {
+      display: grid;
+      text-align: end;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+      column-gap: 30px;
+      margin-bottom: 60px;
+    }
+  }
+  &--margin {
+    margin-top: 105px;
+  }
+}
+
+@media (max-width:425px) {
+  .main {
+    flex-direction: column;
+    padding: 40px 15px;
+    padding-bottom: 0;
+
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    &__title--orange {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    &--margin {
+      margin-top: 0px;
+    }
+    &-content > *:first-child {
+      margin-bottom: 15px;
+    }
+    &-content {
+      margin-bottom: 45px;
+      width: auto;
+    }
+    &-side-content {
+      column-gap: 10px;
+      row-gap: 15px;
+      margin-bottom: 55px;
+    }
+    &__btn {
+      display: none;
+    }
+    &-side > *:first-child {
+      margin-bottom: 20px;
+    }
+    &-side__title {
+      text-align: start;
+    }
+    &-side__title--red {
+
+    }
+  }
+}

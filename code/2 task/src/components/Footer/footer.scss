@@ -1,0 +1,69 @@
+@import '../../styles/color.scss';
+
+.footer {
+  padding-top: 55px;
+  padding-bottom: 20px;
+  margin-top: auto;
+  background-color: $black;
+
+  &-desctop-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-desctop-content > *:last-child {
+    text-align: end;
+  }
+  &-copyright {
+    text-align: end;
+    margin-top: 33px;
+  }
+  &-copyright__title {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $white;
+  }
+  &-copyright__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $white;
+    text-decoration: underline;
+  }
+  &-mobile-content {
+    display: none;
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width:425px) {
+  .footer {
+    padding: 45px 15px;
+    z-index: 222;
+    
+    &-copyright {
+      text-align: start;
+      margin-top: 50px;
+    }
+    &-desctop-content {
+      display: none;
+    }
+    &-mobile-content {
+      display: flex;
+    }
+    &-mobile-content-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    &-mobile-content > * {
+      margin-bottom: 30px;
+    }
+    &-mobile-content > *:last-child {
+      margin-bottom: 0px;
+      text-align: start;
+    }
+  }
+}

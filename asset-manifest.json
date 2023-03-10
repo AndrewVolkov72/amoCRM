@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/amoCRM/static/css/main.c8040ba6.css",
+    "main.js": "/amoCRM/static/js/main.d86d96b6.js",
+    "static/media/logo.svg": "/amoCRM/static/media/logo.2e08d1bd108cb8b2aee116b1817d851e.svg",
+    "static/media/whatsup.svg": "/amoCRM/static/media/whatsup.c3d7a933a8355b23bc435ff74d3849c1.svg",
+    "static/media/phone.svg": "/amoCRM/static/media/phone.cf9c56ecdadaadbb83004223aedc739c.svg",
+    "index.html": "/amoCRM/index.html",
+    "static/media/telegram.svg": "/amoCRM/static/media/telegram.ec28ad3ae01fc187af4c6626094c876b.svg",
+    "main.c8040ba6.css.map": "/amoCRM/static/css/main.c8040ba6.css.map",
+    "main.d86d96b6.js.map": "/amoCRM/static/js/main.d86d96b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8040ba6.css",
+    "static/js/main.d86d96b6.js"
+  ]
+}

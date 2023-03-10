@@ -1,0 +1,29 @@
+@import '../../styles/color.scss';
+
+.list {
+  
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $grey;
+    margin-bottom: 20px;
+    min-height: 17px;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+  &-content-sub > * {
+    margin-right: 10px;
+  }
+  &-content-sub > *:last-child {
+    margin-right: 0;
+  }
+  &-content__link {
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+  }
+}

@@ -1,0 +1,17 @@
+.bg {
+  border-radius: 100%;
+  opacity: 0.5;
+  position: absolute;
+  filter: blur(196px);
+}
+.bg.red {
+  background: #961A1A;
+  left: -102px;
+  top: 251px;
+}
+.bg.purple {
+  background: #833AB4;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -154px;
+}

@@ -1,0 +1,32 @@
+@import './styles/color.scss';
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: $black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  padding: 0 150px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width:425px) {
+  .app {
+    padding: 0;
+  }
+}

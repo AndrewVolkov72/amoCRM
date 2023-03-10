@@ -1,0 +1,20 @@
+import React from 'react';
+import { Footer } from './components/Footer/Footer';
+import { Header } from './components/Header/Header';
+import { Main } from './components/Main/Main';
+
+function App() {
+  return (
+    <div className='app'>
+      <div className="header--margin">
+        <Header/>
+      </div>
+      <div className="main--margin">
+        <Main/>
+      </div>
+      <Footer/>
+    </div>
+  );
+}
+
+export default App;
